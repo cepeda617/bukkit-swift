@@ -13,6 +13,12 @@
 		C98C0DD419EA062A00D7E2B8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C98C0DD319EA062A00D7E2B8 /* Images.xcassets */; };
 		C98C0DD719EA062A00D7E2B8 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C98C0DD519EA062A00D7E2B8 /* LaunchScreen.xib */; };
 		C98C0DE319EA062A00D7E2B8 /* bukkit_swiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98C0DE219EA062A00D7E2B8 /* bukkit_swiftTests.swift */; };
+		C98C0DEE19EA0F9600D7E2B8 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98C0DED19EA0F9600D7E2B8 /* User.swift */; };
+		C98C0DF319EB5A0500D7E2B8 /* DictionaryExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98C0DF219EB5A0500D7E2B8 /* DictionaryExtension.swift */; };
+		C98C0DF619EB77CF00D7E2B8 /* URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98C0DF519EB77CF00D7E2B8 /* URL.swift */; };
+		C98C0DF819EB77F300D7E2B8 /* BukkitAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98C0DF719EB77F300D7E2B8 /* BukkitAPI.swift */; };
+		C9F2062719ECBCDA00A73360 /* Alamofire.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = C9F2061719ECBC6A00A73360 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C9F2062819ECBCE000A73360 /* SwiftyJSON.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = C9F2062019ECBC7800A73360 /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,7 +29,64 @@
 			remoteGlobalIDString = C98C0DC619EA062A00D7E2B8;
 			remoteInfo = "bukkit-swift";
 		};
+		C9F2061619ECBC6A00A73360 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C9F2061119ECBC6A00A73360 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F8111E3319A95C8B0040E7D1;
+			remoteInfo = Alamofire;
+		};
+		C9F2061819ECBC6A00A73360 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C9F2061119ECBC6A00A73360 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F8111E3E19A95C8B0040E7D1;
+			remoteInfo = AlamofireTests;
+		};
+		C9F2061F19ECBC7800A73360 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C9F2061A19ECBC7800A73360 /* SwiftyJSON.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2E4FEFDB19575BE100351305;
+			remoteInfo = SwiftyJSON;
+		};
+		C9F2062119ECBC7800A73360 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C9F2061A19ECBC7800A73360 /* SwiftyJSON.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2E4FEFE619575BE100351305;
+			remoteInfo = SwiftyJSONTests;
+		};
+		C9F2062319ECBCAB00A73360 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C9F2061119ECBC6A00A73360 /* Alamofire.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = F8111E3219A95C8B0040E7D1;
+			remoteInfo = Alamofire;
+		};
+		C9F2062519ECBCAF00A73360 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C9F2061A19ECBC7800A73360 /* SwiftyJSON.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 2E4FEFDA19575BE100351305;
+			remoteInfo = SwiftyJSON;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C9A76FA119EC6CAD00A51418 /* Copy Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				C9F2062819ECBCE000A73360 /* SwiftyJSON.framework in Copy Frameworks */,
+				C9F2062719ECBCDA00A73360 /* Alamofire.framework in Copy Frameworks */,
+			);
+			name = "Copy Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		C98C0DC719EA062A00D7E2B8 /* bukkit-swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "bukkit-swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -36,6 +99,12 @@
 		C98C0DDC19EA062A00D7E2B8 /* bukkit-swiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "bukkit-swiftTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C98C0DE119EA062A00D7E2B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C98C0DE219EA062A00D7E2B8 /* bukkit_swiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bukkit_swiftTests.swift; sourceTree = "<group>"; };
+		C98C0DED19EA0F9600D7E2B8 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		C98C0DF219EB5A0500D7E2B8 /* DictionaryExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DictionaryExtension.swift; sourceTree = "<group>"; };
+		C98C0DF519EB77CF00D7E2B8 /* URL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URL.swift; sourceTree = "<group>"; };
+		C98C0DF719EB77F300D7E2B8 /* BukkitAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BukkitAPI.swift; sourceTree = "<group>"; };
+		C9F2061119ECBC6A00A73360 /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = Alamofire/Alamofire.xcodeproj; sourceTree = "<group>"; };
+		C9F2061A19ECBC7800A73360 /* SwiftyJSON.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SwiftyJSON.xcodeproj; path = SwiftyJSON/SwiftyJSON.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +131,8 @@
 				C98C0DC919EA062A00D7E2B8 /* bukkit-swift */,
 				C98C0DDF19EA062A00D7E2B8 /* bukkit-swiftTests */,
 				C98C0DC819EA062A00D7E2B8 /* Products */,
+				C9F2061119ECBC6A00A73360 /* Alamofire.xcodeproj */,
+				C9F2061A19ECBC7800A73360 /* SwiftyJSON.xcodeproj */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,11 +148,14 @@
 		C98C0DC919EA062A00D7E2B8 /* bukkit-swift */ = {
 			isa = PBXGroup;
 			children = (
+				C98C0DEC19EA0F5300D7E2B8 /* models */,
+				C98C0DF419EB779900D7E2B8 /* helpers */,
 				C98C0DCC19EA062A00D7E2B8 /* AppDelegate.swift */,
 				C98C0DCE19EA062A00D7E2B8 /* ViewController.swift */,
 				C98C0DD019EA062A00D7E2B8 /* Main.storyboard */,
 				C98C0DD319EA062A00D7E2B8 /* Images.xcassets */,
 				C98C0DD519EA062A00D7E2B8 /* LaunchScreen.xib */,
+				C98C0DF119EB59E100D7E2B8 /* extensions */,
 				C98C0DCA19EA062A00D7E2B8 /* Supporting Files */,
 			);
 			path = "bukkit-swift";
@@ -112,6 +186,49 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		C98C0DEC19EA0F5300D7E2B8 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				C98C0DED19EA0F9600D7E2B8 /* User.swift */,
+			);
+			name = models;
+			sourceTree = "<group>";
+		};
+		C98C0DF119EB59E100D7E2B8 /* extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C98C0DF219EB5A0500D7E2B8 /* DictionaryExtension.swift */,
+			);
+			name = extensions;
+			sourceTree = "<group>";
+		};
+		C98C0DF419EB779900D7E2B8 /* helpers */ = {
+			isa = PBXGroup;
+			children = (
+				C98C0DF519EB77CF00D7E2B8 /* URL.swift */,
+				C98C0DF719EB77F300D7E2B8 /* BukkitAPI.swift */,
+			);
+			name = helpers;
+			sourceTree = "<group>";
+		};
+		C9F2061219ECBC6A00A73360 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C9F2061719ECBC6A00A73360 /* Alamofire.framework */,
+				C9F2061919ECBC6A00A73360 /* AlamofireTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C9F2061B19ECBC7800A73360 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C9F2062019ECBC7800A73360 /* SwiftyJSON.framework */,
+				C9F2062219ECBC7800A73360 /* SwiftyJSONTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -122,10 +239,13 @@
 				C98C0DC319EA062A00D7E2B8 /* Sources */,
 				C98C0DC419EA062A00D7E2B8 /* Frameworks */,
 				C98C0DC519EA062A00D7E2B8 /* Resources */,
+				C9A76FA119EC6CAD00A51418 /* Copy Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				C9F2062619ECBCAF00A73360 /* PBXTargetDependency */,
+				C9F2062419ECBCAB00A73360 /* PBXTargetDependency */,
 			);
 			name = "bukkit-swift";
 			productName = "bukkit-swift";
@@ -179,6 +299,16 @@
 			mainGroup = C98C0DBE19EA062A00D7E2B8;
 			productRefGroup = C98C0DC819EA062A00D7E2B8 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = C9F2061219ECBC6A00A73360 /* Products */;
+					ProjectRef = C9F2061119ECBC6A00A73360 /* Alamofire.xcodeproj */;
+				},
+				{
+					ProductGroup = C9F2061B19ECBC7800A73360 /* Products */;
+					ProjectRef = C9F2061A19ECBC7800A73360 /* SwiftyJSON.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				C98C0DC619EA062A00D7E2B8 /* bukkit-swift */,
@@ -186,6 +316,37 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		C9F2061719ECBC6A00A73360 /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = C9F2061619ECBC6A00A73360 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C9F2061919ECBC6A00A73360 /* AlamofireTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = AlamofireTests.xctest;
+			remoteRef = C9F2061819ECBC6A00A73360 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C9F2062019ECBC7800A73360 /* SwiftyJSON.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SwiftyJSON.framework;
+			remoteRef = C9F2061F19ECBC7800A73360 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C9F2062219ECBC7800A73360 /* SwiftyJSONTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = SwiftyJSONTests.xctest;
+			remoteRef = C9F2062119ECBC7800A73360 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		C98C0DC519EA062A00D7E2B8 /* Resources */ = {
@@ -214,6 +375,10 @@
 			files = (
 				C98C0DCF19EA062A00D7E2B8 /* ViewController.swift in Sources */,
 				C98C0DCD19EA062A00D7E2B8 /* AppDelegate.swift in Sources */,
+				C98C0DF619EB77CF00D7E2B8 /* URL.swift in Sources */,
+				C98C0DEE19EA0F9600D7E2B8 /* User.swift in Sources */,
+				C98C0DF819EB77F300D7E2B8 /* BukkitAPI.swift in Sources */,
+				C98C0DF319EB5A0500D7E2B8 /* DictionaryExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -232,6 +397,16 @@
 			isa = PBXTargetDependency;
 			target = C98C0DC619EA062A00D7E2B8 /* bukkit-swift */;
 			targetProxy = C98C0DDD19EA062A00D7E2B8 /* PBXContainerItemProxy */;
+		};
+		C9F2062419ECBCAB00A73360 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Alamofire;
+			targetProxy = C9F2062319ECBCAB00A73360 /* PBXContainerItemProxy */;
+		};
+		C9F2062619ECBCAF00A73360 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftyJSON;
+			targetProxy = C9F2062519ECBCAF00A73360 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -405,6 +580,7 @@
 				C98C0DE819EA062A00D7E2B8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C98C0DE919EA062A00D7E2B8 /* Build configuration list for PBXNativeTarget "bukkit-swiftTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +589,7 @@
 				C98C0DEB19EA062A00D7E2B8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
