@@ -17,6 +17,7 @@
 		C98C0DF319EB5A0500D7E2B8 /* DictionaryExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98C0DF219EB5A0500D7E2B8 /* DictionaryExtension.swift */; };
 		C98C0DF619EB77CF00D7E2B8 /* URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98C0DF519EB77CF00D7E2B8 /* URL.swift */; };
 		C98C0DF819EB77F300D7E2B8 /* BukkitAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98C0DF719EB77F300D7E2B8 /* BukkitAPI.swift */; };
+		C9CD586719EE019600D89200 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9CD586619EE019600D89200 /* Router.swift */; };
 		C9F2062719ECBCDA00A73360 /* Alamofire.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = C9F2061719ECBC6A00A73360 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C9F2062819ECBCE000A73360 /* SwiftyJSON.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = C9F2062019ECBC7800A73360 /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
@@ -103,6 +104,7 @@
 		C98C0DF219EB5A0500D7E2B8 /* DictionaryExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DictionaryExtension.swift; sourceTree = "<group>"; };
 		C98C0DF519EB77CF00D7E2B8 /* URL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URL.swift; sourceTree = "<group>"; };
 		C98C0DF719EB77F300D7E2B8 /* BukkitAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BukkitAPI.swift; sourceTree = "<group>"; };
+		C9CD586619EE019600D89200 /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		C9F2061119ECBC6A00A73360 /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = Alamofire/Alamofire.xcodeproj; sourceTree = "<group>"; };
 		C9F2061A19ECBC7800A73360 /* SwiftyJSON.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SwiftyJSON.xcodeproj; path = SwiftyJSON/SwiftyJSON.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -148,6 +150,7 @@
 		C98C0DC919EA062A00D7E2B8 /* bukkit-swift */ = {
 			isa = PBXGroup;
 			children = (
+				C9CD586619EE019600D89200 /* Router.swift */,
 				C98C0DEC19EA0F5300D7E2B8 /* models */,
 				C98C0DF419EB779900D7E2B8 /* helpers */,
 				C98C0DCC19EA062A00D7E2B8 /* AppDelegate.swift */,
@@ -374,6 +377,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C98C0DCF19EA062A00D7E2B8 /* ViewController.swift in Sources */,
+				C9CD586719EE019600D89200 /* Router.swift in Sources */,
 				C98C0DCD19EA062A00D7E2B8 /* AppDelegate.swift in Sources */,
 				C98C0DF619EB77CF00D7E2B8 /* URL.swift in Sources */,
 				C98C0DEE19EA0F9600D7E2B8 /* User.swift in Sources */,
