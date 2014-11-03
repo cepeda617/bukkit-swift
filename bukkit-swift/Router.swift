@@ -19,6 +19,12 @@ enum Router: URLRequestConvertible {
   case UpdateUser(String, [String: AnyObject])
   case DestroyUser(String)
   
+  case Lists()
+  case CreateList([String: AnyObject])
+  case ReadList(String)
+  case UpdateList(String, [String: AnyObject])
+  case DestroyList(String)
+  
   var method: Alamofire.Method {
     switch self {
     case .Users: return .GET
@@ -26,6 +32,12 @@ enum Router: URLRequestConvertible {
     case .ReadUser: return .GET
     case .UpdateUser: return .PUT
     case .DestroyUser: return .DELETE
+      
+    case .Lists: return .GET
+    case .CreateList: return .POST
+    case .ReadList: return .GET
+    case .UpdateList: return .PUT
+    case .DestroyList: return .DELETE
     }
   }
   
@@ -36,6 +48,12 @@ enum Router: URLRequestConvertible {
     case .ReadUser(let id): return "/users/\(id)"
     case .UpdateUser(let id, _): return "/users/\(id)"
     case .DestroyUser(let id): return "/users/\(id)"
+      
+    case .Lists: return "/lists"
+    case .CreateList: return "/lists"
+    case .ReadList(let id): return "/lists/\(id)"
+    case .UpdateList(let id, _): return "/lists/\(id)"
+    case .DestroyList(let id): return "/lists/\(id)"
     }
   }
   

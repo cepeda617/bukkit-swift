@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C92FFCC719FB3B0900C02B55 /* ListsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92FFCC619FB3B0900C02B55 /* ListsViewController.swift */; };
+		C92FFCC919FC960300C02B55 /* List.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92FFCC819FC960300C02B55 /* List.swift */; };
+		C92FFCCC19FD995F00C02B55 /* ListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92FFCCB19FD995F00C02B55 /* ListCell.swift */; };
+		C92FFCCF19FDC43F00C02B55 /* ImageHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92FFCCE19FDC43F00C02B55 /* ImageHelper.swift */; };
+		C92FFCD51A070FBA00C02B55 /* AddListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92FFCD41A070FBA00C02B55 /* AddListViewController.swift */; };
 		C98C0DCD19EA062A00D7E2B8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98C0DCC19EA062A00D7E2B8 /* AppDelegate.swift */; };
 		C98C0DCF19EA062A00D7E2B8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98C0DCE19EA062A00D7E2B8 /* ViewController.swift */; };
 		C98C0DD219EA062A00D7E2B8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C98C0DD019EA062A00D7E2B8 /* Main.storyboard */; };
@@ -15,8 +20,6 @@
 		C98C0DE319EA062A00D7E2B8 /* bukkit_swiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98C0DE219EA062A00D7E2B8 /* bukkit_swiftTests.swift */; };
 		C98C0DEE19EA0F9600D7E2B8 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98C0DED19EA0F9600D7E2B8 /* User.swift */; };
 		C98C0DF319EB5A0500D7E2B8 /* DictionaryExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98C0DF219EB5A0500D7E2B8 /* DictionaryExtension.swift */; };
-		C98C0DF619EB77CF00D7E2B8 /* URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98C0DF519EB77CF00D7E2B8 /* URL.swift */; };
-		C98C0DF819EB77F300D7E2B8 /* BukkitAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98C0DF719EB77F300D7E2B8 /* BukkitAPI.swift */; };
 		C9CD586719EE019600D89200 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9CD586619EE019600D89200 /* Router.swift */; };
 		C9F2062719ECBCDA00A73360 /* Alamofire.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = C9F2061719ECBC6A00A73360 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C9F2062819ECBCE000A73360 /* SwiftyJSON.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = C9F2062019ECBC7800A73360 /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -90,6 +93,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		C92FFCC619FB3B0900C02B55 /* ListsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListsViewController.swift; sourceTree = "<group>"; };
+		C92FFCC819FC960300C02B55 /* List.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = List.swift; sourceTree = "<group>"; };
+		C92FFCCB19FD995F00C02B55 /* ListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListCell.swift; sourceTree = "<group>"; };
+		C92FFCCE19FDC43F00C02B55 /* ImageHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageHelper.swift; sourceTree = "<group>"; };
+		C92FFCD41A070FBA00C02B55 /* AddListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddListViewController.swift; sourceTree = "<group>"; };
 		C98C0DC719EA062A00D7E2B8 /* bukkit-swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "bukkit-swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C98C0DCB19EA062A00D7E2B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C98C0DCC19EA062A00D7E2B8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -102,8 +110,6 @@
 		C98C0DE219EA062A00D7E2B8 /* bukkit_swiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bukkit_swiftTests.swift; sourceTree = "<group>"; };
 		C98C0DED19EA0F9600D7E2B8 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		C98C0DF219EB5A0500D7E2B8 /* DictionaryExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DictionaryExtension.swift; sourceTree = "<group>"; };
-		C98C0DF519EB77CF00D7E2B8 /* URL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URL.swift; sourceTree = "<group>"; };
-		C98C0DF719EB77F300D7E2B8 /* BukkitAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BukkitAPI.swift; sourceTree = "<group>"; };
 		C9CD586619EE019600D89200 /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		C9F2061119ECBC6A00A73360 /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = Alamofire/Alamofire.xcodeproj; sourceTree = "<group>"; };
 		C9F2061A19ECBC7800A73360 /* SwiftyJSON.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SwiftyJSON.xcodeproj; path = SwiftyJSON/SwiftyJSON.xcodeproj; sourceTree = "<group>"; };
@@ -127,6 +133,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C92FFCC319FB3AE600C02B55 /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C92FFCC619FB3B0900C02B55 /* ListsViewController.swift */,
+				C92FFCD41A070FBA00C02B55 /* AddListViewController.swift */,
+			);
+			name = controllers;
+			sourceTree = "<group>";
+		};
+		C92FFCCA19FD993000C02B55 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				C92FFCCB19FD995F00C02B55 /* ListCell.swift */,
+			);
+			name = views;
+			sourceTree = "<group>";
+		};
+		C92FFCCD19FDC42D00C02B55 /* helpers */ = {
+			isa = PBXGroup;
+			children = (
+				C92FFCCE19FDC43F00C02B55 /* ImageHelper.swift */,
+			);
+			name = helpers;
+			sourceTree = "<group>";
+		};
 		C98C0DBE19EA062A00D7E2B8 = {
 			isa = PBXGroup;
 			children = (
@@ -150,12 +181,14 @@
 		C98C0DC919EA062A00D7E2B8 /* bukkit-swift */ = {
 			isa = PBXGroup;
 			children = (
-				C9CD586619EE019600D89200 /* Router.swift */,
+				C98C0DD019EA062A00D7E2B8 /* Main.storyboard */,
+				C92FFCC319FB3AE600C02B55 /* controllers */,
 				C98C0DEC19EA0F5300D7E2B8 /* models */,
-				C98C0DF419EB779900D7E2B8 /* helpers */,
+				C92FFCCD19FDC42D00C02B55 /* helpers */,
+				C92FFCCA19FD993000C02B55 /* views */,
+				C9CD586619EE019600D89200 /* Router.swift */,
 				C98C0DCC19EA062A00D7E2B8 /* AppDelegate.swift */,
 				C98C0DCE19EA062A00D7E2B8 /* ViewController.swift */,
-				C98C0DD019EA062A00D7E2B8 /* Main.storyboard */,
 				C98C0DD319EA062A00D7E2B8 /* Images.xcassets */,
 				C98C0DD519EA062A00D7E2B8 /* LaunchScreen.xib */,
 				C98C0DF119EB59E100D7E2B8 /* extensions */,
@@ -193,6 +226,7 @@
 			isa = PBXGroup;
 			children = (
 				C98C0DED19EA0F9600D7E2B8 /* User.swift */,
+				C92FFCC819FC960300C02B55 /* List.swift */,
 			);
 			name = models;
 			sourceTree = "<group>";
@@ -203,15 +237,6 @@
 				C98C0DF219EB5A0500D7E2B8 /* DictionaryExtension.swift */,
 			);
 			name = extensions;
-			sourceTree = "<group>";
-		};
-		C98C0DF419EB779900D7E2B8 /* helpers */ = {
-			isa = PBXGroup;
-			children = (
-				C98C0DF519EB77CF00D7E2B8 /* URL.swift */,
-				C98C0DF719EB77F300D7E2B8 /* BukkitAPI.swift */,
-			);
-			name = helpers;
 			sourceTree = "<group>";
 		};
 		C9F2061219ECBC6A00A73360 /* Products */ = {
@@ -376,13 +401,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C92FFCD51A070FBA00C02B55 /* AddListViewController.swift in Sources */,
 				C98C0DCF19EA062A00D7E2B8 /* ViewController.swift in Sources */,
 				C9CD586719EE019600D89200 /* Router.swift in Sources */,
+				C92FFCCF19FDC43F00C02B55 /* ImageHelper.swift in Sources */,
 				C98C0DCD19EA062A00D7E2B8 /* AppDelegate.swift in Sources */,
-				C98C0DF619EB77CF00D7E2B8 /* URL.swift in Sources */,
 				C98C0DEE19EA0F9600D7E2B8 /* User.swift in Sources */,
-				C98C0DF819EB77F300D7E2B8 /* BukkitAPI.swift in Sources */,
+				C92FFCC719FB3B0900C02B55 /* ListsViewController.swift in Sources */,
+				C92FFCCC19FD995F00C02B55 /* ListCell.swift in Sources */,
 				C98C0DF319EB5A0500D7E2B8 /* DictionaryExtension.swift in Sources */,
+				C92FFCC919FC960300C02B55 /* List.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
