@@ -12,7 +12,16 @@ import UIKit
 class ListsViewController: UITableViewController {
   var lists: [List] = []
   
+  func setupNavigationBar() {
+//    let navbar = self.navigationController!.navigationBar
+//    navbar.barTintColor = Bukkit.Color.blue()
+//    navbar.tintColor = UIColor.whiteColor()
+  }
+  
   override func viewDidLoad() {
+    super.viewDidLoad()
+    self.setupNavigationBar()
+    
     List.all { (lists) in
       self.lists = lists
       self.tableView.reloadData()
@@ -34,13 +43,8 @@ class ListsViewController: UITableViewController {
     cell.nameLabel?.text = list.name
     cell.userLabel?.text = list.user!.name
     
-    ImageHelper.downloadImage(list.user!.avatar_url, { image, error in
-      cell.avatarImage!.image = image
-    })
-    
-    ImageHelper.downloadImage(list.image_url!, { image, error in
-      cell.listImage!.image = image
-    })
+    list.user?.add_image_to_view(cell.avatarImage!)
+    list.add_image_to_view(cell.listImage!)
     
     return cell
   }
@@ -54,8 +58,25 @@ class ListsViewController: UITableViewController {
     let list:List = source.list!
     
     if list.name != "" {
-      println("Creating list: \(list.name)")
+      println("TODO: Create list \(list.name)")
       self.tableView.reloadData()
+    }
+  }
+  
+  // MARK: - Navigation
+  
+  // In a storyboard-based application, you will often want to do a little preparation before navigation
+  override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
+    // Get the new view controller using segue.destinationViewController.
+    // Pass the selected object to the new view controller.
+    if segue.identifier == "ListDetailSegue" {
+      let index_path = tableView.indexPathForSelectedRow()!
+      let list = self.lists[index_path.row]
+      let controller = segue.destinationViewController.topViewController as ListViewController
+      controller.list = list
+      
+    } else if segue.identifier == "AddListSegue" {
+      // Opening add list view
     }
   }
 }

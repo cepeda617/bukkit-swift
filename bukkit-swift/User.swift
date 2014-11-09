@@ -15,8 +15,10 @@ class User {
   var id: Int
   var name: String
   var email: String
-  var avatar_url: NSURL
+  var avatar_url: NSURL?
   var url: NSURL
+  
+  var avatar: UIImage?
   
   init(json: JSON) {
     self.id = json["id"].intValue
@@ -41,5 +43,12 @@ class User {
       var user = User(json: JSON(json!))
       callback(user)
     }
+  }
+  
+  func add_image_to_view(image_view: UIImageView) {
+    ImageHelper.downloadImage(self.avatar_url!, { image, error in
+      image_view.image = image
+      self.avatar = image
+    })
   }
 }

@@ -12,8 +12,11 @@
 		C92FFCCC19FD995F00C02B55 /* ListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92FFCCB19FD995F00C02B55 /* ListCell.swift */; };
 		C92FFCCF19FDC43F00C02B55 /* ImageHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92FFCCE19FDC43F00C02B55 /* ImageHelper.swift */; };
 		C92FFCD51A070FBA00C02B55 /* AddListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92FFCD41A070FBA00C02B55 /* AddListViewController.swift */; };
+		C92FFCD91A07EE3400C02B55 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92FFCD81A07EE3400C02B55 /* ListViewController.swift */; };
+		C939CF1E1A08622E00832C17 /* ListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C939CF1D1A08622E00832C17 /* ListItem.swift */; };
+		C939CF201A08635000832C17 /* ListItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C939CF1F1A08635000832C17 /* ListItemCell.swift */; };
+		C93DA80B1A0EF206002764F9 /* Bukkit.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93DA80A1A0EF206002764F9 /* Bukkit.swift */; };
 		C98C0DCD19EA062A00D7E2B8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98C0DCC19EA062A00D7E2B8 /* AppDelegate.swift */; };
-		C98C0DCF19EA062A00D7E2B8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98C0DCE19EA062A00D7E2B8 /* ViewController.swift */; };
 		C98C0DD219EA062A00D7E2B8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C98C0DD019EA062A00D7E2B8 /* Main.storyboard */; };
 		C98C0DD419EA062A00D7E2B8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C98C0DD319EA062A00D7E2B8 /* Images.xcassets */; };
 		C98C0DD719EA062A00D7E2B8 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C98C0DD519EA062A00D7E2B8 /* LaunchScreen.xib */; };
@@ -98,10 +101,13 @@
 		C92FFCCB19FD995F00C02B55 /* ListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListCell.swift; sourceTree = "<group>"; };
 		C92FFCCE19FDC43F00C02B55 /* ImageHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageHelper.swift; sourceTree = "<group>"; };
 		C92FFCD41A070FBA00C02B55 /* AddListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddListViewController.swift; sourceTree = "<group>"; };
+		C92FFCD81A07EE3400C02B55 /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		C939CF1D1A08622E00832C17 /* ListItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListItem.swift; sourceTree = "<group>"; };
+		C939CF1F1A08635000832C17 /* ListItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListItemCell.swift; sourceTree = "<group>"; };
+		C93DA80A1A0EF206002764F9 /* Bukkit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bukkit.swift; sourceTree = "<group>"; };
 		C98C0DC719EA062A00D7E2B8 /* bukkit-swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "bukkit-swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C98C0DCB19EA062A00D7E2B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C98C0DCC19EA062A00D7E2B8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C98C0DCE19EA062A00D7E2B8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C98C0DD119EA062A00D7E2B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C98C0DD319EA062A00D7E2B8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		C98C0DD619EA062A00D7E2B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -138,6 +144,7 @@
 			children = (
 				C92FFCC619FB3B0900C02B55 /* ListsViewController.swift */,
 				C92FFCD41A070FBA00C02B55 /* AddListViewController.swift */,
+				C92FFCD81A07EE3400C02B55 /* ListViewController.swift */,
 			);
 			name = controllers;
 			sourceTree = "<group>";
@@ -146,6 +153,7 @@
 			isa = PBXGroup;
 			children = (
 				C92FFCCB19FD995F00C02B55 /* ListCell.swift */,
+				C939CF1F1A08635000832C17 /* ListItemCell.swift */,
 			);
 			name = views;
 			sourceTree = "<group>";
@@ -154,6 +162,7 @@
 			isa = PBXGroup;
 			children = (
 				C92FFCCE19FDC43F00C02B55 /* ImageHelper.swift */,
+				C93DA80A1A0EF206002764F9 /* Bukkit.swift */,
 			);
 			name = helpers;
 			sourceTree = "<group>";
@@ -188,7 +197,6 @@
 				C92FFCCA19FD993000C02B55 /* views */,
 				C9CD586619EE019600D89200 /* Router.swift */,
 				C98C0DCC19EA062A00D7E2B8 /* AppDelegate.swift */,
-				C98C0DCE19EA062A00D7E2B8 /* ViewController.swift */,
 				C98C0DD319EA062A00D7E2B8 /* Images.xcassets */,
 				C98C0DD519EA062A00D7E2B8 /* LaunchScreen.xib */,
 				C98C0DF119EB59E100D7E2B8 /* extensions */,
@@ -227,6 +235,7 @@
 			children = (
 				C98C0DED19EA0F9600D7E2B8 /* User.swift */,
 				C92FFCC819FC960300C02B55 /* List.swift */,
+				C939CF1D1A08622E00832C17 /* ListItem.swift */,
 			);
 			name = models;
 			sourceTree = "<group>";
@@ -402,15 +411,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				C92FFCD51A070FBA00C02B55 /* AddListViewController.swift in Sources */,
-				C98C0DCF19EA062A00D7E2B8 /* ViewController.swift in Sources */,
 				C9CD586719EE019600D89200 /* Router.swift in Sources */,
 				C92FFCCF19FDC43F00C02B55 /* ImageHelper.swift in Sources */,
 				C98C0DCD19EA062A00D7E2B8 /* AppDelegate.swift in Sources */,
+				C939CF1E1A08622E00832C17 /* ListItem.swift in Sources */,
+				C92FFCD91A07EE3400C02B55 /* ListViewController.swift in Sources */,
 				C98C0DEE19EA0F9600D7E2B8 /* User.swift in Sources */,
 				C92FFCC719FB3B0900C02B55 /* ListsViewController.swift in Sources */,
+				C939CF201A08635000832C17 /* ListItemCell.swift in Sources */,
 				C92FFCCC19FD995F00C02B55 /* ListCell.swift in Sources */,
 				C98C0DF319EB5A0500D7E2B8 /* DictionaryExtension.swift in Sources */,
 				C92FFCC919FC960300C02B55 /* List.swift in Sources */,
+				C93DA80B1A0EF206002764F9 /* Bukkit.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

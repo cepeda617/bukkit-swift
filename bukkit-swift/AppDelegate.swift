@@ -12,10 +12,25 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
   
   var window: UIWindow?
+  let navbarStyle = UINavigationBar.appearance()
+  let tabbarStyle = UITabBar.appearance()
   
   
   func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
     // Override point for customization after application launch.
+    
+    // Status bar
+    application.setStatusBarStyle(UIStatusBarStyle.LightContent, animated:false)
+    
+    // Navigation
+    navbarStyle.titleTextAttributes = [NSForegroundColorAttributeName:UIColor.whiteColor()]
+    navbarStyle.barTintColor = Bukkit.Color.blue()
+    navbarStyle.tintColor = UIColor.whiteColor()
+    
+    // Tab Bar
+    tabbarStyle.barTintColor = UIColor.whiteColor()
+    tabbarStyle.tintColor = UIColor.grayColor()
+    
     return true
   }
   
