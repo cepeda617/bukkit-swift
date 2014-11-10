@@ -44,7 +44,12 @@ class ListsViewController: UITableViewController {
     cell.userLabel?.text = list.user!.name
     
     list.user?.add_image_to_view(cell.avatarImage!)
+    cell.avatarImage?.layer.cornerRadius = 4
+    cell.avatarImage?.clipsToBounds = true
+    
     list.add_image_to_view(cell.listImage!)
+    cell.listImage?.layer.cornerRadius = 4
+    cell.listImage?.clipsToBounds = true
     
     return cell
   }

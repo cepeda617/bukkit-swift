@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="7kI-hL-4VX">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -71,6 +72,7 @@
             <objects>
                 <tableViewController title="Notifications" id="RKT-6h-GTw" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="fVJ-zq-xZI">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
@@ -234,6 +236,11 @@
                                             <exclude reference="Xhh-lz-mcw"/>
                                         </mask>
                                         <mask key="constraints">
+                                            <exclude reference="EYv-wG-T3F"/>
+                                            <exclude reference="fBq-ij-1Ds"/>
+                                            <exclude reference="Hkn-nR-KmT"/>
+                                            <exclude reference="MyL-xZ-RtE"/>
+                                            <exclude reference="bLC-rv-g7b"/>
                                             <exclude reference="Axn-QA-A28"/>
                                             <exclude reference="idd-z3-hH2"/>
                                             <exclude reference="oqF-vg-8yT"/>
@@ -242,11 +249,6 @@
                                             <exclude reference="5X0-pq-gbU"/>
                                             <exclude reference="6dx-fw-Du2"/>
                                             <exclude reference="PJE-rS-grZ"/>
-                                            <exclude reference="EYv-wG-T3F"/>
-                                            <exclude reference="fBq-ij-1Ds"/>
-                                            <exclude reference="Hkn-nR-KmT"/>
-                                            <exclude reference="MyL-xZ-RtE"/>
-                                            <exclude reference="bLC-rv-g7b"/>
                                         </mask>
                                     </variation>
                                     <variation key="widthClass=compact">
@@ -257,6 +259,11 @@
                                             <include reference="Xhh-lz-mcw"/>
                                         </mask>
                                         <mask key="constraints">
+                                            <include reference="EYv-wG-T3F"/>
+                                            <include reference="fBq-ij-1Ds"/>
+                                            <include reference="Hkn-nR-KmT"/>
+                                            <include reference="MyL-xZ-RtE"/>
+                                            <include reference="bLC-rv-g7b"/>
                                             <include reference="Axn-QA-A28"/>
                                             <include reference="idd-z3-hH2"/>
                                             <include reference="oqF-vg-8yT"/>
@@ -265,11 +272,6 @@
                                             <include reference="5X0-pq-gbU"/>
                                             <include reference="6dx-fw-Du2"/>
                                             <include reference="PJE-rS-grZ"/>
-                                            <include reference="EYv-wG-T3F"/>
-                                            <include reference="fBq-ij-1Ds"/>
-                                            <include reference="Hkn-nR-KmT"/>
-                                            <include reference="MyL-xZ-RtE"/>
-                                            <include reference="bLC-rv-g7b"/>
                                         </mask>
                                     </variation>
                                 </tableViewCellContentView>
