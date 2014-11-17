@@ -48,23 +48,6 @@ class List {
     self.name = name
   }
   
-  class func all(callback: ([List]) -> Void) {
-    Alamofire.request(Router.Lists()).responseJSON { (request, response, json, error) in
-      var lists = [List]()
-      for (index: String, subJson: JSON) in JSON(json!) {
-        lists.append(List(json: subJson))
-      }
-      callback(lists)
-    }
-  }
-  
-  class func find(id: Int, callback: (List) -> Void) {
-    Alamofire.request(Router.ReadList(id.description)).responseJSON { (request, response, json, error) in
-      var list = List(json: JSON(json!))
-      callback(list)
-    }
-  }
-  
   func fetch(callback: (List) -> Void) {
     Alamofire.request(.GET, url!).responseJSON { (request, response, json, error) in
       var list = List(json: JSON(json!))

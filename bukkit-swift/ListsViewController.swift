@@ -22,7 +22,7 @@ class ListsViewController: UITableViewController {
     super.viewDidLoad()
     self.setupNavigationBar()
     
-    List.all { (lists) in
+    API.lists { (lists) in
       self.lists = lists
       self.tableView.reloadData()
     }

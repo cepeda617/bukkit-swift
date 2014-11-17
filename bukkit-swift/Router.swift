@@ -11,7 +11,8 @@ import Alamofire
 
 enum Router: URLRequestConvertible {
   static let baseURLString = "http://localhost:3000/api/v1"
-  static let OAuthToken: String? = "97507b3209a119d52cc289c6c1b187e2"
+  static let APIToken: String? = "97507b3209a119d52cc289c6c1b187e2"
+//  static let APIToken: String? = UserDefaults().api_token
   
   case Users()
   case CreateUser([String: AnyObject])
@@ -64,7 +65,7 @@ enum Router: URLRequestConvertible {
       let mutableURLRequest = NSMutableURLRequest(URL: URL.URLByAppendingPathComponent(path))
       mutableURLRequest.HTTPMethod = method.toRaw()
       
-      if let token = Router.OAuthToken {
+      if let token = Router.APIToken {
         mutableURLRequest.setValue("Token token=\(token)", forHTTPHeaderField: "authorization")
       }
       
