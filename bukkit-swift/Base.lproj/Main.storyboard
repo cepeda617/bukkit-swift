@@ -55,6 +55,7 @@
                         <viewControllerLayoutGuide type="bottom" id="tRb-RV-amU"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="new-V8-4A2">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5nF-Mj-D3f">
@@ -115,6 +116,7 @@
                         <viewControllerLayoutGuide type="bottom" id="6rR-XY-KWl"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="6w3-Tl-FBV">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email address" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LrG-b0-QXG">
@@ -192,6 +194,7 @@
                         <viewControllerLayoutGuide type="bottom" id="o4u-9k-lbu"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="btp-6S-9hX">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email address" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2Fx-KB-fYf">
