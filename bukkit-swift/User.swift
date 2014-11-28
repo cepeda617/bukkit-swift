@@ -25,7 +25,7 @@ class User {
     self.name = json["name"].stringValue
     self.email = json["email"].stringValue
     self.avatar_url = NSURL(string: json["avatar_url"].stringValue)
-    self.url = NSURL(string: json["url"].stringValue)
+    self.url = NSURL(string: json["url"].stringValue)!
   }
   
   func add_image_to_view(image_view: UIImageView) {

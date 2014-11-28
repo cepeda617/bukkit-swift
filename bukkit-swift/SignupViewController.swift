@@ -34,7 +34,7 @@ class SignupViewController: UIViewController {
   // MARK: - Navigation
 
   // In a storyboard-based application, you will often want to do a little preparation before navigation
-  override func shouldPerformSegueWithIdentifier(identifier: String, sender: AnyObject?) -> Bool {
+  override func shouldPerformSegueWithIdentifier(identifier: String?, sender: AnyObject?) -> Bool {
     // Validate and alert if problem signing up
     return true
   }

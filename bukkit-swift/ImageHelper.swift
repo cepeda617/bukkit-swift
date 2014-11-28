@@ -16,7 +16,7 @@ class ImageHelper {
     NSURLConnection.sendAsynchronousRequest(imageRequest,
       queue: NSOperationQueue.mainQueue(),
       completionHandler: { response, data, error in
-        handler(image: UIImage(data: data), error)
+        handler(image: UIImage(data: data)!, error)
     })
   }
 }
