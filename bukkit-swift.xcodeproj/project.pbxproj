@@ -34,6 +34,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		C93BBD601A281A0200F0E3FC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C9F2061A19ECBC7800A73360 /* SwiftyJSON.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4EC1C1C91A0C1A2D0026ED0B;
+			remoteInfo = SwiftyJSONOSX;
+		};
+		C93BBD621A281A0200F0E3FC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C9F2061A19ECBC7800A73360 /* SwiftyJSON.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4EC1C1D31A0C1A2D0026ED0B;
+			remoteInfo = SwiftyJSONOSXTests;
+		};
 		C98C0DDD19EA062A00D7E2B8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = C98C0DBF19EA062A00D7E2B8 /* Project object */;
@@ -285,6 +299,8 @@
 			children = (
 				C9F2062019ECBC7800A73360 /* SwiftyJSON.framework */,
 				C9F2062219ECBC7800A73360 /* SwiftyJSONTests.xctest */,
+				C93BBD611A281A0200F0E3FC /* SwiftyJSON.framework */,
+				C93BBD631A281A0200F0E3FC /* SwiftyJSONOSXTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -378,6 +394,20 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
+		C93BBD611A281A0200F0E3FC /* SwiftyJSON.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SwiftyJSON.framework;
+			remoteRef = C93BBD601A281A0200F0E3FC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C93BBD631A281A0200F0E3FC /* SwiftyJSONOSXTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = SwiftyJSONOSXTests.xctest;
+			remoteRef = C93BBD621A281A0200F0E3FC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		C9F2061719ECBC6A00A73360 /* Alamofire.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;

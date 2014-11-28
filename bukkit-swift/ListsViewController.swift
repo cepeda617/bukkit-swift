@@ -12,15 +12,8 @@ import UIKit
 class ListsViewController: UITableViewController {
   var lists: [List] = []
   
-  func setupNavigationBar() {
-//    let navbar = self.navigationController!.navigationBar
-//    navbar.barTintColor = Bukkit.Color.blue()
-//    navbar.tintColor = UIColor.whiteColor()
-  }
-  
   override func viewDidLoad() {
     super.viewDidLoad()
-    self.setupNavigationBar()
     
     API.lists { (lists) in
       self.lists = lists
@@ -39,19 +32,7 @@ class ListsViewController: UITableViewController {
   override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> ListCell {
     var cell = tableView.dequeueReusableCellWithIdentifier("ListCell") as ListCell
     var list:List = self.lists[indexPath.row]
-    
-    cell.nameLabel?.text = list.name
-    cell.userLabel?.text = list.user!.name
-    
-    list.user?.add_image_to_view(cell.avatarImage!)
-    cell.avatarImage?.layer.cornerRadius = 4
-    cell.avatarImage?.clipsToBounds = true
-    
-    list.add_image_to_view(cell.listImage!)
-    cell.listImage?.layer.cornerRadius = 4
-    cell.listImage?.clipsToBounds = true
-    
-    return cell
+    return list.into_cell(cell)
   }
   
   @IBAction func unwindToList(segue: UIStoryboardSegue) {

@@ -365,25 +365,6 @@
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qr6-Pk-uap">
                                             <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qO2-vC-SUT">
-                                            <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                                            <constraints>
-                                                <constraint firstAttribute="height" constant="20" id="RGu-sd-hCi"/>
-                                            </constraints>
-                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                            <nil key="highlightedColor"/>
-                                            <variation key="default">
-                                                <mask key="constraints">
-                                                    <exclude reference="RGu-sd-hCi"/>
-                                                </mask>
-                                            </variation>
-                                            <variation key="widthClass=compact">
-                                                <mask key="constraints">
-                                                    <include reference="RGu-sd-hCi"/>
-                                                </mask>
-                                            </variation>
-                                        </label>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5It-EH-jNM">
                                             <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                             <constraints>
@@ -419,6 +400,25 @@
                                                 </mask>
                                             </variation>
                                         </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qO2-vC-SUT">
+                                            <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="20" id="RGu-sd-hCi"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                            <variation key="default">
+                                                <mask key="constraints">
+                                                    <exclude reference="RGu-sd-hCi"/>
+                                                </mask>
+                                            </variation>
+                                            <variation key="widthClass=compact">
+                                                <mask key="constraints">
+                                                    <include reference="RGu-sd-hCi"/>
+                                                </mask>
+                                            </variation>
+                                        </label>
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="qr6-Pk-uap" firstAttribute="top" secondItem="5It-EH-jNM" secondAttribute="bottom" constant="10" id="2ca-FK-IQZ"/>
@@ -438,9 +438,9 @@
                                     <variation key="default">
                                         <mask key="subviews">
                                             <exclude reference="qr6-Pk-uap"/>
-                                            <exclude reference="qO2-vC-SUT"/>
                                             <exclude reference="5It-EH-jNM"/>
                                             <exclude reference="Xhh-lz-mcw"/>
+                                            <exclude reference="qO2-vC-SUT"/>
                                         </mask>
                                         <mask key="constraints">
                                             <exclude reference="EYv-wG-T3F"/>
@@ -461,9 +461,9 @@
                                     <variation key="widthClass=compact">
                                         <mask key="subviews">
                                             <include reference="qr6-Pk-uap"/>
-                                            <include reference="qO2-vC-SUT"/>
                                             <include reference="5It-EH-jNM"/>
                                             <include reference="Xhh-lz-mcw"/>
+                                            <include reference="qO2-vC-SUT"/>
                                         </mask>
                                         <mask key="constraints">
                                             <include reference="EYv-wG-T3F"/>

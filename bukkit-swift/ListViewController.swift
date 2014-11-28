@@ -10,36 +10,11 @@ import UIKit
 
 class ListViewController: UITableViewController {
   var list: List!
-  var header = UIView()
-  
-  func setupHeader() {
-    let avatarImage = UIImageView()
-    avatarImage.image = list.user!.avatar
-    avatarImage.frame = CGRect(x:10, y:10, width:40, height:40)
-    header.addSubview(avatarImage)
-    
-    let nameLabel = UILabel()
-    nameLabel.text = list.name
-    nameLabel.frame = CGRect(x:60, y:10, width:330, height:20)
-    nameLabel.font = UIFont.boldSystemFontOfSize(17)
-    header.addSubview(nameLabel)
-    
-    let userLabel = UILabel()
-    userLabel.text = list.user!.name
-    userLabel.frame = CGRect(x:60, y:30, width:330, height:20)
-    userLabel.font = UIFont.systemFontOfSize(14)
-    userLabel.textColor = UIColor.lightGrayColor()
-    header.addSubview(userLabel)
-    
-    let listImage = UIImageView()
-    listImage.image = list.image
-    listImage.frame = CGRect(x:10, y:60, width:380, height:140)
-    header.addSubview(listImage)
-  }
+  var header: UIView!
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    self.setupHeader()
+    self.header = list.to_view()
     
     list.fetch { (fetched_list) in
       self.list = fetched_list
@@ -75,7 +50,6 @@ class ListViewController: UITableViewController {
   override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> ListItemCell {
     let cell = tableView.dequeueReusableCellWithIdentifier("ListItemCell") as ListItemCell
     let list_item: ListItem = self.list.list_items[indexPath.row]
-    
     cell.nameLabel.text = list_item.name
 
     return cell

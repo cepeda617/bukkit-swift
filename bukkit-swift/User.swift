@@ -28,9 +28,11 @@ class User {
     self.url = NSURL(string: json["url"].stringValue)!
   }
   
-  func add_image_to_view(image_view: UIImageView) {
+  func add_image_to(image_view: UIImageView) {
     ImageHelper.downloadImage(self.avatar_url!, { image, error in
       image_view.image = image
+      image_view.layer.cornerRadius = 4
+      image_view.clipsToBounds = true
       self.avatar = image
     })
   }
