@@ -12,8 +12,16 @@ import SwiftyJSON
 
 
 class API {
-  init() {
-    
+  
+  class func signin(email: String, password: String, callback: (Bool) -> Void) {
+    Alamofire.request(Router.Signin(email, password)).responseJSON { (request, response, json, error) in
+      if (error == nil) {
+        UserDefaults().token = json!["token"] as String
+        callback(true)
+      } else {
+        callback(false)
+      }
+    }
   }
   
   class func lists(callback: ([List]) -> Void) {

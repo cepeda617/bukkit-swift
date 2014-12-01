@@ -14,6 +14,9 @@ enum Router: URLRequestConvertible {
   static let APIToken: String? = "97507b3209a119d52cc289c6c1b187e2"
 //  static let APIToken: String? = UserDefaults().api_token
   
+  case Signin(String, String)
+  case Signout()
+  
   case Users()
   case CreateUser([String: AnyObject])
   case ReadUser(String)
@@ -28,6 +31,9 @@ enum Router: URLRequestConvertible {
   
   var method: Alamofire.Method {
     switch self {
+    case .Signin: return .POST
+    case .Signout: return .GET
+    
     case .Users: return .GET
     case .CreateUser: return .POST
     case .ReadUser: return .GET
@@ -44,6 +50,9 @@ enum Router: URLRequestConvertible {
   
   var path: String {
     switch self {
+    case .Signin: return "/signin"
+    case .Signout: return "/signout"
+    
     case .Users: return "/users"
     case .CreateUser: return "/users"
     case .ReadUser(let id): return "/users/\(id)"
@@ -70,6 +79,8 @@ enum Router: URLRequestConvertible {
       }
       
       switch self {
+      case .Signin(let email, let password):
+        return Alamofire.ParameterEncoding.JSON.encode(mutableURLRequest, parameters: ["email": email, "password": password]).0
       case .CreateUser(let parameters):
         return Alamofire.ParameterEncoding.JSON.encode(mutableURLRequest, parameters: parameters).0
       case .UpdateUser(_, let parameters):

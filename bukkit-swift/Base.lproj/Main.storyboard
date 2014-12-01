@@ -223,7 +223,7 @@
                                     <rect key="frame" x="16" y="263" width="368" height="30"/>
                                 </variation>
                                 <connections>
-                                    <segue destination="7kI-hL-4VX" kind="show" id="5ih-ts-0mF"/>
+                                    <segue destination="7kI-hL-4VX" kind="show" identifier="signinSegue" id="5ih-ts-0mF"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -715,6 +715,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="2GB-iy-JNB"/>
+        <segue reference="5ih-ts-0mF"/>
     </inferredMetricsTieBreakers>
 </document>

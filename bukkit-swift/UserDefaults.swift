@@ -11,12 +11,12 @@ import Foundation
 class UserDefaults {
   let defaults = NSUserDefaults.standardUserDefaults()
   
-  var api_token: String {
+  var token: String {
     get {
-      return self.get("api_token") as String
+      return defaults.stringForKey("token")!
     }
-    set(value) {
-      self.set("api_token", value: value)
+    set {
+      self.set("token", value: newValue)
     }
   }
   

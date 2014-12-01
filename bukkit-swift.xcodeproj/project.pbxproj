@@ -166,12 +166,12 @@
 		C92FFCC319FB3AE600C02B55 /* controllers */ = {
 			isa = PBXGroup;
 			children = (
+				C99901C91A1994F700298CCC /* WelcomeViewController.swift */,
+				C99901CB1A1996EB00298CCC /* SignInViewController.swift */,
+				C99901C31A11AB5300298CCC /* SignupViewController.swift */,
 				C92FFCC619FB3B0900C02B55 /* ListsViewController.swift */,
 				C92FFCD41A070FBA00C02B55 /* AddListViewController.swift */,
 				C92FFCD81A07EE3400C02B55 /* ListViewController.swift */,
-				C99901C31A11AB5300298CCC /* SignupViewController.swift */,
-				C99901C91A1994F700298CCC /* WelcomeViewController.swift */,
-				C99901CB1A1996EB00298CCC /* SignInViewController.swift */,
 			);
 			name = controllers;
 			sourceTree = "<group>";
